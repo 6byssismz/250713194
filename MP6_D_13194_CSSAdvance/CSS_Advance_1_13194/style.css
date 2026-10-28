@@ -1,0 +1,190 @@
+/* Tampilan CSS untuk Formulir Pendaftaran Lomba */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: #f1f5f9;
+  color: #243247;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(28, 45, 70, 0.10);
+}
+
+.page-header {
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #153e75, #2878b5);
+  border-radius: 12px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.intro {
+  margin: 0;
+  max-width: 680px;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+
+.form-table td {
+  padding: 13px;
+  border: 1px solid #d9e2ec;
+  vertical-align: middle;
+}
+
+.form-table tr:nth-child(even) {
+  background: #f8fbff;
+}
+
+.form-table tr:hover {
+  background: #eef6ff;
+}
+
+.field-label {
+  width: 36%;
+  color: #173e6d;
+}
+
+.top-align {
+  vertical-align: top !important;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  border: 1px solid #bdcbd9;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #243247;
+  font: inherit;
+}
+
+textarea {
+  max-width: 100%;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #8ac7ff;
+  border-color: #2878b5;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 5px 0 0;
+  accent-color: #2878b5;
+}
+
+.choice-group {
+  margin: 5px 0;
+}
+
+input[type="file"] {
+  max-width: 100%;
+  font: inherit;
+}
+
+.submit-cell {
+  text-align: center;
+  padding: 20px !important;
+  background: #f0f7ff;
+}
+
+.submit-note {
+  margin: 0 0 12px;
+  color: #52657a;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  padding: 12px 26px;
+  border: 0;
+  border-radius: 8px;
+  background: #1769aa;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #104d80;
+}
+
+footer {
+  margin-top: 22px;
+  color: #718096;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  body {
+    padding: 14px 8px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .page-header {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .form-table,
+  .form-table tbody,
+  .form-table tr,
+  .form-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .form-table td {
+    border-bottom: 0;
+  }
+
+  .form-table tr td:last-child {
+    border-bottom: 1px solid #d9e2ec;
+  }
+
+  .submit-cell {
+    border-bottom: 1px solid #d9e2ec !important;
+  }
+}

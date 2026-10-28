@@ -1,0 +1,198 @@
+/* Tampilan CSS untuk Formulir Pendaftaran Kegiatan */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: #f4f3ff;
+  color: #292746;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(47, 38, 100, 0.10);
+}
+
+.page-header {
+  margin-bottom: 26px;
+  padding: 24px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #49368f, #8068ce);
+  border-radius: 12px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.88;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.intro {
+  margin: 0;
+  max-width: 690px;
+}
+
+h2 {
+  margin: 26px 0 10px;
+  padding-left: 12px;
+  color: #49368f;
+  font-size: 19px;
+  border-left: 4px solid #8068ce;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0;
+}
+
+.form-table td {
+  padding: 13px;
+  border: 1px solid #dedbf0;
+  vertical-align: middle;
+}
+
+.form-table tr:nth-child(even) {
+  background: #faf9ff;
+}
+
+.form-table tr:hover {
+  background: #f1efff;
+}
+
+.field-label {
+  width: 32%;
+  color: #49368f;
+}
+
+.top-align {
+  vertical-align: top !important;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  border: 1px solid #c9c4e5;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #292746;
+  font: inherit;
+}
+
+textarea {
+  max-width: 100%;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #c3b8ff;
+  border-color: #7057bd;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 0 5px 0 0;
+  accent-color: #7057bd;
+}
+
+.choice-group {
+  margin: 5px 0;
+}
+
+input[type="file"] {
+  max-width: 100%;
+  font: inherit;
+}
+
+.submit-cell {
+  padding: 20px !important;
+  text-align: center;
+  background: #f7f5ff;
+}
+
+.submit-note {
+  margin: 0 0 12px;
+  color: #6c6887;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  padding: 12px 26px;
+  border: 0;
+  border-radius: 8px;
+  background: #624bb0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #463387;
+}
+
+footer {
+  margin-top: 22px;
+  color: #817d9a;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 620px) {
+  body {
+    padding: 14px 8px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  .page-header {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  .form-table,
+  .form-table tbody,
+  .form-table tr,
+  .form-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .form-table td {
+    border-bottom: 0;
+  }
+
+  .form-table tr td:last-child {
+    border-bottom: 1px solid #dedbf0;
+  }
+
+  .submit-cell {
+    border-bottom: 1px solid #dedbf0 !important;
+  }
+}
