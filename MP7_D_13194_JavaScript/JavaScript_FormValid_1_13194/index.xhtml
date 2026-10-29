@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Form Pendaftaran seminar (XHTML)</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript">
+            function fn_ValForm(){
+                var sMsg = "";
+                if (document.getElementById("nama").value == ""){
+                    sMsg += "\n* Anda Belum mengisi nama";
+                }
+                if (document.getElementById("instansi").value == ""){
+                    sMsg += "\n* Anda Belum mengisi instansi";
+                }
+                if (document.getElementById("pertanyaan").value == ""){
+                    sMsg += "\n* Anda Belum mengisi pertanyaan";
+                }
+
+                if (sMsg != ""){
+                    alert("Peringatan:\n" + sMsg);
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Form Pendaftaran Seminar</h1>
+        <form action="#" method="post" onsubmit="return fn_ValForm();">
+           <p>Nama lengkap:<br /> <input type="text" name="nama" id="nama" /></p>
+            
+           <p>asal Instansi:<br /><input type="text" name="instansi" id="instansi" /></p>
+            
+           <p>Pertanyaan untuk pembicara:<br /><textarea name="pertanyaan" id="pertanyaan" rows="4" cols="30" ></textarea></p>
+           
+           <p>
+               <input type="submit" value="Kirim" />
+           </p>
+        </form>
+    </body>
+
+</html>
